@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UniLink</string>
+    <string name="hub_doubt">Doubt Board</string>
+    <string name="hub_duel">Skill Duels</string>
+    <string name="hub_focus">Focus Rooms</string>
+    <string name="hub_vault">Resource Vault</string>
+    <string name="uni_coins">UniCoins</string>
+    <string name="xp_streak">streak</string>
+    <string name="search_hint">Search students, projects, doubts...</string>
+    <string name="view_all">View All →</string>
+    <string name="answer">Answer</string>
+    <string name="doubt_board_title">🧠 Doubt Board</string>
+</resources>

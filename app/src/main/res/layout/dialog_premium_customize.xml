@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium Customization"
+        android:textColor="@color/text_white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Personalize your UniLink experience"
+        android:textColor="@color/text_grey"
+        android:textSize="14sp" />
+
+    <!-- Profile Banner Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Profile Banner Theme"
+        android:textColor="@color/text_white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/bannerOption1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="8dp"
+                app:strokeColor="@color/neon_cyan"
+                app:strokeWidth="2dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_mesh_gradient"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/bannerOption2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="0dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_brand_gradient"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/bannerOption3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="0dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/grad_cyber"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Chat Wallpaper Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Chat Wallpaper"
+        android:textColor="@color/text_white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/wallpaperOption1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="8dp"
+                app:strokeColor="@color/neon_cyan"
+                app:strokeWidth="2dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_mesh_gradient"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/wallpaperOption2"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="0dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_animated_mesh"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/wallpaperOption3"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="0dp">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0F0F14"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChangeProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Change Profile Picture"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/bg_card"
+        app:cornerRadius="8dp"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:strokeColor="@color/neon_cyan"
+        app:strokeWidth="1dp" />
+
+    <!-- App Theme Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="App Accent Theme"
+        android:textColor="@color/text_white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgThemes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        <RadioButton
+            android:id="@+id/rbThemeCyber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cyber (Dark)"
+            android:textColor="@color/neon_cyan"
+            android:buttonTint="@color/neon_cyan" />
+        <RadioButton
+            android:id="@+id/rbThemeIndigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indigo Liquid"
+            android:textColor="@color/liquid_indigo"
+            android:buttonTint="@color/liquid_indigo" />
+        <RadioButton
+            android:id="@+id/rbThemeRose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rose Crystal"
+            android:textColor="@color/liquid_rose"
+            android:buttonTint="@color/liquid_rose" />
+        <RadioButton
+            android:id="@+id/rbThemeLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp Light (Whitish)"
+            android:textColor="#111B21"
+            android:buttonTint="#075E54" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveCustomization"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Apply Changes"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:backgroundTint="@color/neon_cyan"
+        app:cornerRadius="16dp" />
+
+</LinearLayout>

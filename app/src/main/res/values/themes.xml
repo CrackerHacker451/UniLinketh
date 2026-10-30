@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UniLink" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/cyan_brand</item>
+        <item name="colorPrimaryVariant">@color/bg_dark</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/pink_brand</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+
+        <!-- Custom Semantic Attributes (Dark/Cyber) -->
+        <item name="appBackgroundColor">@color/bg_dark</item>
+        <item name="cardBackgroundColor">@color/bg_card</item>
+        <item name="textPrimaryColor">@color/text_white</item>
+        <item name="textSecondaryColor">@color/text_grey</item>
+        <item name="accentColor">@color/neon_cyan</item>
+        <item name="borderStrokeColor">@color/glass_border</item>
+        <item name="inputBackgroundColor">@color/bg_card</item>
+        <item name="bottomNavBackground">#16161E</item>
+
+        <item name="editTextColor">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.UniLink.Indigo" parent="Theme.UniLink">
+        <item name="colorPrimary">@color/liquid_indigo</item>
+        <item name="colorSecondary">@color/cyan_brand</item>
+    </style>
+
+    <style name="Theme.UniLink.Teal" parent="Theme.UniLink">
+        <item name="colorPrimary">@color/liquid_teal</item>
+        <item name="colorSecondary">@color/liquid_indigo</item>
+    </style>
+
+    <style name="Theme.UniLink.Rose" parent="Theme.UniLink">
+        <item name="colorPrimary">@color/liquid_rose</item>
+        <item name="colorSecondary">@color/liquid_amber</item>
+    </style>
+
+    <style name="Theme.UniLink.Amber" parent="Theme.UniLink">
+        <item name="colorPrimary">@color/liquid_amber</item>
+        <item name="colorSecondary">@color/liquid_rose</item>
+    </style>
+
+    <!-- WhatsApp Style Theme -->
+    <style name="Theme.UniLink.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/wa_primary</item>
+        <item name="colorPrimaryVariant">@color/wa_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/wa_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/wa_bg_light</item>
+        <item name="android:statusBarColor">@color/wa_primary</item>
+        <item name="android:textColorPrimary">@color/wa_text_primary</item>
+        <item name="android:textColorSecondary">@color/wa_text_secondary</item>
+
+        <!-- Custom Semantic Attributes (Light/WhatsApp) -->
+        <item name="appBackgroundColor">@color/wa_bg_light</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="textPrimaryColor">@color/wa_text_primary</item>
+        <item name="textSecondaryColor">@color/wa_text_secondary</item>
+        <item name="accentColor">@color/wa_primary</item>
+        <item name="borderStrokeColor">#E0E0E0</item>
+        <item name="inputBackgroundColor">@color/white</item>
+        <item name="bottomNavBackground">@color/white</item>
+
+        <item name="editTextColor">@color/wa_text_primary</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="GlassCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/bg_card</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="strokeColor">@color/glass_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="QuickActionItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">@drawable/bg_quick_action</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textColor">?attr/textPrimaryColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="MessageActionItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?attr/textPrimaryColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+</resources>
